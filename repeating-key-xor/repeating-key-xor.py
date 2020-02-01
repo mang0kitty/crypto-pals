@@ -1,8 +1,8 @@
 def repeating_key_xor(message_bytes, key):
-    output_bytes = b''
-    for i, byte in enumerate(message_bytes):
-        output_bytes += bytes([key[i % len(key)] ^ byte])
-    return output_bytes
+        output_bytes = b''
+        for i, byte in enumerate(message_bytes):
+            output_bytes += bytes([key[i % len(key)] ^ byte])
+        return output_bytes
 
 
 # def decrypt_repeating_key_xor(encrypted_message, key):
